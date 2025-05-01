@@ -3,6 +3,7 @@ import React from 'react';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import Services from '@/components/Services';
+import Products from '@/components/Products'; // Импортируем новый компонент
 import Testimonials from '@/components/Testimonials';
 import Footer from '@/components/Footer';
 
@@ -13,6 +14,7 @@ const Index = () => {
       <main>
         <Hero />
         <Services />
+        <Products /> {/* Добавляем компонент продукции */}
         <section className="py-20">
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -74,3 +76,4 @@ const Index = () => {
 };
 
 export default Index;
+
